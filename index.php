@@ -48,6 +48,18 @@
     Ci sono diverse domande con relative risposte.
     Gestire il "Database" e la visualizzazione di
     queste domande e risposte con PHP. -->
+    <?php
+    foreach ($faq as $key => $value) {
+      ?>
+        <h2><?php echo $value['question']; ?></h2>
+      <?php
+        echo '<br><br>';
+      ?>
+        <p><?php echo $value['answer']; ?></p>
+      <?php
+        echo '<br><br>';
+    }
+    ?>
 
   </body>
 </html>
